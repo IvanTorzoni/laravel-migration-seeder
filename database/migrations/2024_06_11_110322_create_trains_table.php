@@ -8,7 +8,8 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     * Create TABLE ‘houses’ (
+     * 
+     * Create TABLE ‘trains’ (
      * ‘id’ Unsigned BIGINT NOT NULL AUTO_INCREMENT,
      * ‘azienda’ VARCHAR(255) NOT NULL,
      * ‘stazione_partenza’ VARCHAR(255) NOT NULL,
