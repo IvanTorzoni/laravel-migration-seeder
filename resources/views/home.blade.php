@@ -20,7 +20,7 @@
                 <th scope="col">In Ritardo</th>
             </tr>
         </thead>
-        {{-- <tbody>
+        <tbody>
             @foreach ($trains as $train)
                 <tr>
                     <th scope="row">{{ $train->id }}</th>
@@ -36,6 +36,6 @@
                     <td>{{ $train->in_ritardo === 0 ? 'si' : 'no'}}</td>
                 </tr>
             @endforeach
-        </tbody> --}}
+        </tbody>
     </table>
 @endsection
