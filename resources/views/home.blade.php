@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>Tabella dei treni in partenza oggi</h1>
+    <h1>Tabella dei treni in partenza</h1>
 
     <table class="table">
         <thead>
