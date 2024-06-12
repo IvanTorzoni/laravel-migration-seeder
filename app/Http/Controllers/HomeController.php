@@ -11,7 +11,7 @@ class HomeController extends Controller
     public function index() {
         $today = Carbon::today();
 
-        $trains = Train::where('data_di_partenza', '=', $today->toDateTimeString())->get();
+        $trains = Train::where('data_di_partenza', '>=', $today->toDateTimeString())->get();
         // dd($trains);
         return view('home', compact('trains'));
     }
