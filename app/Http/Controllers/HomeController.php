@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\Train;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index() {
-        $trains = Train::where('data_di_partenza', '=', "2024-06-11")->get();
+        $today = Carbon::today();
+
+        $trains = Train::where('data_di_partenza', '=', $today->toDateTimeString())->get();
         // dd($trains);
         return view('home', compact('trains'));
     }
